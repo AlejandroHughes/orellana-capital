@@ -60,12 +60,12 @@ const jsonLd = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.orellanacapitaladvisors.com"),
-  title: "Orellana Capital Advisors",
-  description: "Asesoramiento Financiero Estratégico",
+  title: "Fusiones y adquisiciones (M&A) en Uruguay | Orellana Capital",
+  description: "Asesoramos en fusiones y adquisiciones (M&A), finanzas corporativas y levantamiento de capital en Uruguay a fondos, search funds y empresas compradoras.",
   keywords: "asesoramiento,finanzas, estrategia, consultoría",
   openGraph: {
-    title: "Orellana Capital Advisors | Asesoramiento Financiero Estratégico",
-    description: "Impulsamos tu Crecimiento Empresarial con Soluciones Financieras Estratégicas",
+    title: "Fusiones y adquisiciones (M&A) en Uruguay | Orellana Capital",
+    description: "Asesoramos en fusiones y adquisiciones (M&A), finanzas corporativas y levantamiento de capital en Uruguay a fondos, search funds y empresas compradoras.",
     url: "https://www.orellanacapitaladvisors.com",
     siteName: "Orellana Capital Advisors",
     images: [
@@ -76,7 +76,7 @@ export const metadata: Metadata = {
         alt: "Orellana Capital Advisors - Asesoramiento Financiero Estratégico",
       },
     ],
-    locale: "es_ES",
+    locale: "es_UY",
     type: "website",
   },
   robots: {

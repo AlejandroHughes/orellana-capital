@@ -20,9 +20,9 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, services,
       </span>
 
       <div className="flex-1 p-8 text-left">
-        <h2 className="text-base sm:text-lg md:text-xl font-bold text-dark-blue font-h1 pr-16">
+        <h3 className="text-base sm:text-lg md:text-xl font-bold text-dark-blue font-h1 pr-16">
           {title}
-        </h2>
+        </h3>
 
         <div className="h-[3px] w-12 bg-blue rounded-full my-5 transition-all duration-300 group-hover:w-20" />
 
