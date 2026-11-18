@@ -10,8 +10,8 @@ const AboutUs = () => {
       <div className="container max-w-6xl mx-auto md:py-16 flex flex-col md:flex-row items-center md:items-stretch my-10 px-4 md:my-20 md:space-x-20">
         <div className="px-4 md:px-0 md:w-1/2">
           <div>
-            <h2 className="text-blue font-bold font-h2 mb-2 fade-up-init">Orellana Capital</h2>
-            <h3 className="text-xl md:text-3xl font-bold text-dark-blue md:leading-[48px] font-h3">{t.aboutUs.title}</h3>
+            <p className="text-blue font-bold font-h2 mb-2 fade-up-init">Orellana Capital</p>
+            <h2 className="text-xl md:text-3xl font-bold text-dark-blue md:leading-[48px] font-h3">{t.aboutUs.title}</h2>
 
             <div className="h-[3px] w-12 bg-blue rounded-full my-6" />
 
