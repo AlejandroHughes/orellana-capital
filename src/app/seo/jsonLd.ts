@@ -1,7 +1,7 @@
 // Structured data (schema.org JSON-LD) for the home page, Spanish version.
 // Source: Indigo SEO audit, Nov 2026, action 2 (reference block, ES).
-// Placeholders resolved: email = visible contact email; telephone, postal code
-// and Universidad de Montevideo faculty URL omitted (not published on the site).
+// Placeholders resolved: email = visible contact email; postal code = 11500
+// (Carrasco); telephone and Universidad de Montevideo faculty URL omitted (not published on the site).
 // Every value declared here must also be visible on the page.
 
 const SITE_URL = 'https://www.orellanacapitaladvisors.com';
@@ -50,6 +50,7 @@ export const jsonLd = {
         '@type': 'PostalAddress',
         streetAddress: 'Dr. Alejandro Schroeder 6558, oficina 10 (Schroeder Haus)',
         addressLocality: 'Montevideo',
+        postalCode: '11500',
         addressCountry: 'UY',
       },
       areaServed: { '@type': 'Country', name: 'Uruguay' },
