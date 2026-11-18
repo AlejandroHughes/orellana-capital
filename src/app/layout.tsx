@@ -49,6 +49,9 @@ export const metadata: Metadata = {
   title: "Fusiones y adquisiciones (M&A) en Uruguay | Orellana Capital",
   description: "Asesoramos en fusiones y adquisiciones (M&A), finanzas corporativas y levantamiento de capital en Uruguay a fondos, search funds y empresas compradoras.",
   keywords: "asesoramiento,finanzas, estrategia, consultoría",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Fusiones y adquisiciones (M&A) en Uruguay | Orellana Capital",
     description: "Asesoramos en fusiones y adquisiciones (M&A), finanzas corporativas y levantamiento de capital en Uruguay a fondos, search funds y empresas compradoras.",
