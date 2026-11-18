@@ -42,6 +42,7 @@ export const jsonLd = {
       legalName: 'Orellana Capital SAS',
       url: HOME_URL,
       logo: { '@type': 'ImageObject', url: `${SITE_URL}/images/logo.png` },
+      image: `${SITE_URL}/images/logo.png`,
       description:
         'Firma especializada en asesoramiento financiero estratégico: M&A, finanzas corporativas, levantamiento de capital y venture capital.',
       email: 'alejandro@orellanacapitaladvisors.com',
