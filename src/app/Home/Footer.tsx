@@ -29,7 +29,7 @@ const Footer = () => {
           </a>
         </address>
         <p className="text-white/70 text-sm font-extralight text-center font-body md:mt-0 mt-4">
-          © 2024 Orellana Capital Advisors. All Rights Reserved
+          © 2026 Orellana Capital Advisors · Orellana Capital SAS
         </p>
       </div>
     </section>

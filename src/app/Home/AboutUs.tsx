@@ -1,6 +1,5 @@
 import React from 'react';
 import OptimizedImage from '../Utility/OptimizedImage';
-import profilePic from '../../../public/images/profile-pic.jpg';
 import { useLanguage } from '../i18n/LanguageContext';
 
 const AboutUs = () => {
@@ -41,17 +40,28 @@ const AboutUs = () => {
         <div className="group relative md:w-1/2 w-full rounded-2xl h-[420px] md:h-auto overflow-hidden mt-10 md:mt-0 shadow-xl shadow-dark-blue/20 ring-1 ring-dark-blue/10 fade-in-init">
           <OptimizedImage
             className='absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105'
-            src={profilePic.src}
-            alt="Alejandro Hughes"
+            src="/images/alejandro-hughes-stefani.jpg"
+            alt={t.aboutUs.photoAlt}
             width={450}
             height={450}
             quality={100}
           />
           <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-dark-blue via-dark-blue/85 to-transparent pt-24 pb-7 px-7">
-            <p className="text-white font-bold text-lg font-h2">Alejandro Hughes</p>
-            <p className="text-white/75 text-sm font-light font-body mt-1">
-              {t.aboutUs.role}
+            <p className="text-white font-bold text-lg font-h2">Alejandro Hughes Stefani</p>
+            <p className="text-white/90 text-sm font-normal font-body mt-1">
+              {t.aboutUs.role} · Orellana Capital Advisors
             </p>
+            <p className="text-white/75 text-sm font-light font-body mt-1">
+              {t.aboutUs.specialty}
+            </p>
+            <a
+              href="https://www.linkedin.com/in/alejandro-hughes-9b501a48/"
+              target="_blank"
+              rel="noopener noreferrer me"
+              className="inline-block text-white/75 text-sm font-light font-body mt-2 underline underline-offset-4 hover:text-white duration-300"
+            >
+              {t.aboutUs.linkedin}
+            </a>
             <div className="mt-5 pt-5 border-t border-white/20">
               <p className="text-2xl font-bold text-white font-h2">+15</p>
               <p className="text-[11px] uppercase tracking-[0.15em] text-white/60 font-body mt-1">
