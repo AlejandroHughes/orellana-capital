@@ -5,7 +5,7 @@ import 'animate.css';
 import Head from 'next/head';
 import favicon from '../../public/favicon.ico';
 import localFont from "next/font/local";
-import Script from "next/script";
+import { jsonLdHtml } from "./seo/jsonLd";
 import GoogleAnalytics from "./Utility/GoogleAnalytics";
 import { Analytics } from "@vercel/analytics/next";
 
@@ -43,20 +43,6 @@ const inter = Inter({ subsets: ["latin"] });
 //   ],
 //   variable: '--font-euclid',
 // })
-
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Orellana Capital Advisors",
-  "url": "https://www.orellanacapitaladvisors.com",
-  "logo": "https://www.orellanacapitaladvisors.com/images/logo.png",
-  "description": "",
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "contactType": "customer service",
-    "email": "info@orellanacapitaladvisors.com"
-  }
-};
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.orellanacapitaladvisors.com"),
@@ -104,17 +90,16 @@ export default function RootLayout({
   return (
     <html lang="es">
       <GoogleAnalytics />
-      <Script
-        id="jsonLd"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
         <link rel="manifest" href="/manifest.json" />
       </Head>
       <body >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: jsonLdHtml }}
+        />
         {children}
         <Analytics />
       </body>
