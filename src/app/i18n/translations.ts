@@ -14,12 +14,12 @@ export const translations = {
       language: 'Idioma',
     },
     hero: {
-      title: 'M&A, Finanzas Corporativas y Banca de Inversión',
-      subtitle: 'Más de 15 años de experiencia impulsando tu crecimiento empresarial con Soluciones Financieras Estratégicas',
+      title: 'M&A y finanzas corporativas en Uruguay',
+      subtitle: 'Banca de inversión y asesoramiento a compradores, liderados por un director con más de 15 años de experiencia.',
       cta: 'Descubre cómo podemos ayudarte',
     },
     aboutUs: {
-      title: 'Sobre Nosotros',
+      title: 'Sobre nosotros',
       paragraph1: 'Somos una firma especializada en brindar asesoramiento financiero estratégico, liderada por Alejandro Hughes, un profesional con más de 15 años de experiencia en M&A, finanzas corporativas, banca de inversión y gestión empresarial.',
       paragraph2: 'A lo largo de su carrera, Alejandro ha liderado exitosamente numerosas rondas de inversión, negociaciones complejas y adquisiciones a nivel local e internacional. Con una sólida red de contactos en el sector financiero, su experiencia abarca mercados como Uruguay, España, Australia, y otras regiones, lo que le otorga una perspectiva global para cada transacción.',
       academicLabel: 'Actividad académica',
@@ -29,27 +29,27 @@ export const translations = {
       yearsOfExperience: 'Años de experiencia',
     },
     services: {
-      title: 'Nuestros Servicios',
+      title: 'Servicios de M&A y finanzas corporativas',
       intro: 'Ofrecemos soluciones financieras integrales para ayudar a empresas a crecer y maximizar su valor. Nuestros servicios principales son:',
       included: 'Servicios incluidos',
       items: [
         {
-          title: 'Finanzas Corporativas y Estrategia',
+          title: 'Finanzas corporativas y estrategia',
           description: 'Asesoramos a empresas en el financiamiento de sus negocios existentes y/o nuevos proyectos, diseñando estrategias financieras que maximizan el valor y optimizan la estructura de capital.',
           services: ['Valoración de empresas y modelos financieros.', 'Financiamiento y relacionamiento con instituciones financieras / bancarias.', 'Análisis de solvencia financiera, flujos de caja y desarrollo de nuevos negocios.'],
         },
         {
-          title: 'Levantamiento de Capital',
+          title: 'Levantamiento de capital',
           description: 'Brindamos apoyo integral para el levantamiento de capital, desde la preparación de teasers y decks de inversión hasta la negociación de contratos y la optimización de términos y condiciones para recibir inversión.',
           services: ['Preparación de documentos para inversores.', 'Asesoría en términos, condiciones, cláusulas y covenants.', 'Contacto con fondos de inversión y/o inversores estratégicos.'],
         },
         {
-          title: 'Venture Capital',
+          title: 'Venture capital en Uruguay',
           description: 'Ayudamos a startups y empresas en expansión a preparar sus modelos financieros, desarrollar métricas y a optimizar sus estrategias para atraer inversión de Capital de Riesgo.',
           services: ['Desarrollo de modelos financieros para startups.', 'Medición de métricas clave (KPI’s).', 'Contacto y captación de fondos con VC’s.'],
         },
         {
-          title: 'Mergers and Acquisitions',
+          title: 'Fusiones y adquisiciones (M&A)',
           description: 'Asesoramos en todo el proceso de fusiones y adquisiciones, gestionando las negociaciones y estructurando las operaciones de manera eficiente y profesional.',
           services: ['Presentación de fondos de Private Equity o inversores estratégicos.', 'Valuación, modelos financieros, estructuración, y cierre de acuerdos.', 'Negociación con todas las partes involucradas.'],
         },
@@ -64,7 +64,7 @@ export const translations = {
       cta: 'Solicitá una consulta personalizada',
     },
     whyCompany: {
-      title: 'Por Qué Elegirnos',
+      title: 'Por qué elegirnos',
       text: 'Nuestra experiencia, red de contactos y enfoque orientado a resultados nos permiten ofrecer un servicio de alto valor para nuestros clientes. Adaptamos nuestras soluciones a las necesidades específicas de cada empresa, asegurando un crecimiento sostenible y rentable.',
       differentiators: 'Puntos diferenciadores',
       reasons: [
@@ -105,8 +105,8 @@ export const translations = {
       language: 'Language',
     },
     hero: {
-      title: 'M&A, Corporate Finance and Investment Banking',
-      subtitle: 'Over 15 years of experience driving your business growth with Strategic Financial Solutions',
+      title: 'M&A and Corporate Finance Advisory in Uruguay',
+      subtitle: 'Investment banking and buy-side advisory, led by a director with over 15 years of experience.',
       cta: 'Discover how we can help you',
     },
     aboutUs: {
@@ -120,12 +120,12 @@ export const translations = {
       yearsOfExperience: 'Years of experience',
     },
     services: {
-      title: 'Our Services',
+      title: 'M&A and Corporate Finance Services',
       intro: 'We offer comprehensive financial solutions to help companies grow and maximize their value. Our core services are:',
       included: 'Included services',
       items: [
         {
-          title: 'Corporate Finance and Strategy',
+          title: 'Corporate Finance Advisory and Strategy',
           description: 'We advise companies on financing their existing businesses and/or new projects, designing financial strategies that maximize value and optimize their capital structure.',
           services: ['Company valuation and financial modeling.', 'Financing and relationship management with financial / banking institutions.', 'Financial solvency and cash flow analysis, and new business development.'],
         },
@@ -135,12 +135,12 @@ export const translations = {
           services: ['Preparation of investor documents.', 'Advice on terms, conditions, clauses and covenants.', 'Outreach to investment funds and/or strategic investors.'],
         },
         {
-          title: 'Venture Capital',
+          title: 'Venture Capital in Uruguay',
           description: 'We help startups and scale-ups build their financial models, develop metrics and optimize their strategies to attract Venture Capital investment.',
           services: ['Financial modeling for startups.', 'Tracking of key metrics (KPIs).', 'Outreach and fundraising with VCs.'],
         },
         {
-          title: 'Mergers and Acquisitions',
+          title: 'Mergers and Acquisitions (M&A)',
           description: 'We advise throughout the entire mergers and acquisitions process, managing negotiations and structuring transactions efficiently and professionally.',
           services: ['Introductions to Private Equity funds or strategic investors.', 'Valuation, financial modeling, structuring and deal closing.', 'Negotiation with all parties involved.'],
         },
