@@ -1,18 +1,19 @@
 'use client';
 
 import { useEffect, useRef } from "react";
-import Navbar from "./Home/Navbar";
-import Hero from "./Home/Hero";
-import AboutUs from "./Home/AboutUs";
-import Services from "./Home/Services";
-import BannerCTA from "./Home/Banner-CTA";
-import Brands from "./Home/Brands";
-import WhyCompany from "./Home/WhyCompany";
-import Contact from "./Home/Contact";
-import Footer from "./Home/Footer";
-import { LanguageProvider } from "./i18n/LanguageContext";
+import Navbar from "./Navbar";
+import Hero from "./Hero";
+import AboutUs from "./AboutUs";
+import Services from "./Services";
+import BannerCTA from "./Banner-CTA";
+import Brands from "./Brands";
+import WhyCompany from "./WhyCompany";
+import Contact from "./Contact";
+import Footer from "./Footer";
+import { LanguageProvider } from "../i18n/LanguageContext";
+import type { Language } from "../i18n/translations";
 
-export default function Home() {
+export default function HomePage({ language }: { language: Language }) {
   const observer = useRef<IntersectionObserver | null>(null);
 
   useEffect(() => {
@@ -58,7 +59,7 @@ export default function Home() {
   }, []);
 
   return (
-    <LanguageProvider>
+    <LanguageProvider language={language}>
       <div className="relative bg-cover bg-hero w-full h-[600px] md:h-[850px] md:bg-fixed">
         <div aria-hidden="true" className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-dark-blue/70 to-transparent" />
         <Navbar />
