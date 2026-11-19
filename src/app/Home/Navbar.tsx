@@ -12,7 +12,7 @@ import LanguageSwitcher from '../i18n/LanguageSwitcher';
 const sectionIds = ['about-us', 'services', 'why-company'] as const;
 
 const Navbar = () => {
-  const { t } = useLanguage();
+  const { t, homePath } = useLanguage();
   const links = [
     { id: sectionIds[0], label: t.nav.aboutUs },
     { id: sectionIds[1], label: t.nav.services },
@@ -96,7 +96,7 @@ const Navbar = () => {
         <div className={`flex items-center justify-between transition-all duration-300 ${isScrolled ? 'h-20' : 'h-24 md:pt-3'}`}>
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <Link href="/" className="text-white">
+              <Link href={homePath} className="text-white">
                 <Image
                   src={logoImage}
                   alt="Logo"

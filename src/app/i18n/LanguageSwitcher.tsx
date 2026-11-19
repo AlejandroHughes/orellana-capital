@@ -4,6 +4,7 @@ import { useId } from 'react';
 import { useLanguage } from './LanguageContext';
 import { Language } from './translations';
 import { trackEvent } from '../Utility/AnalyticsHelpers';
+import { HOME_PATH } from '../seo/site';
 
 // Flags are inline SVG because emoji flags don't render on Windows
 const SpainFlag = ({ clipId }: { clipId: string }) => (
@@ -34,39 +35,38 @@ const options: { code: Language; label: string; Flag: typeof UKFlag }[] = [
   { code: 'en', label: 'English', Flag: UKFlag },
 ];
 
+// Real links (not buttons) so crawlers discover both language URLs.
 const LanguageSwitcher = ({ className = '' }: { className?: string }) => {
-  const { language, setLanguage, t } = useLanguage();
+  const { language, t } = useLanguage();
   const id = useId().replace(/:/g, '');
 
-  const handleClick = (code: Language) => {
-    if (code === language) return;
-    trackEvent('language_change', { language: code });
-    setLanguage(code);
-  };
-
   return (
-    <div role="group" aria-label={t.nav.language} className={`flex items-center gap-1.5 ${className}`}>
+    <nav aria-label={t.nav.language} className={`flex items-center gap-1.5 ${className}`}>
       {options.map(({ code, label, Flag }) => {
         const isActive = language === code;
         return (
-          <button
+          <a
             key={code}
-            type="button"
-            onClick={() => handleClick(code)}
-            aria-pressed={isActive}
+            href={HOME_PATH[code]}
+            hrefLang={code}
+            lang={code}
+            onClick={() => {
+              if (!isActive) trackEvent('language_change', { language: code });
+            }}
+            aria-current={isActive ? 'page' : undefined}
             aria-label={label}
             title={label}
-            className={`h-5 w-5 rounded-full overflow-hidden ring-1 duration-300 ${
+            className={`block h-5 w-5 rounded-full overflow-hidden ring-1 duration-300 ${
               isActive
                 ? 'ring-white/80 opacity-100'
                 : 'ring-white/20 opacity-40 grayscale hover:opacity-80 hover:grayscale-0'
             }`}
           >
             <Flag clipId={`${id}-${code}`} />
-          </button>
+          </a>
         );
       })}
-    </div>
+    </nav>
   );
 };
 

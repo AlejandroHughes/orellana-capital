@@ -1,42 +1,24 @@
 'use client'
 
-import { createContext, ReactNode, useContext, useEffect, useState } from 'react';
+import { createContext, ReactNode, useContext } from 'react';
 import { Language, translations, Translations } from './translations';
+import { HOME_PATH } from '../seo/site';
 
-const STORAGE_KEY = 'language';
-
+// The language comes from the route (/ = es, /en = en) so the server HTML
+// is already in the right language for crawlers.
 interface LanguageContextValue {
   language: Language;
-  setLanguage: (language: Language) => void;
+  homePath: string;
   t: Translations;
 }
 
 const LanguageContext = createContext<LanguageContextValue | null>(null);
 
-export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  const [language, setLanguage] = useState<Language>('es');
-
-  // Restore the visitor's last choice
-  useEffect(() => {
-    try {
-      const stored = localStorage.getItem(STORAGE_KEY);
-      if (stored === 'es' || stored === 'en') setLanguage(stored);
-    } catch {}
-  }, []);
-
-  useEffect(() => {
-    document.documentElement.lang = language;
-    try {
-      localStorage.setItem(STORAGE_KEY, language);
-    } catch {}
-  }, [language]);
-
-  return (
-    <LanguageContext.Provider value={{ language, setLanguage, t: translations[language] }}>
-      {children}
-    </LanguageContext.Provider>
-  );
-};
+export const LanguageProvider = ({ language, children }: { language: Language; children: ReactNode }) => (
+  <LanguageContext.Provider value={{ language, homePath: HOME_PATH[language], t: translations[language] }}>
+    {children}
+  </LanguageContext.Provider>
+);
 
 export const useLanguage = () => {
   const context = useContext(LanguageContext);
